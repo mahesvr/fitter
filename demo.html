@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2821/2821904.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAA4 RME Spare utilitzation</title>
+</head>
+<body>
+    <form>
+        <h1>Cart Maintenance Daily Update Records</h1>
+        <div class="details">
+            <label for="dates">Date:</label>
+            <input type="date" id="fdate" name="date" placeholder="Select date" min="01-11-2021"  max= "01-01-2024" required>
+        </div>
+        <div class="details">
+            <label for="shift">Shift:</label>
+            <input list="Shift" id="fshift" name="shift" placeholder="Select Shift" required />
+            <datalist id="Shift">
+                <option value="A">
+                <option value="G">
+                <option value="B">
+                <option value="C"> 
+            </datalist>
+        </div>
+        <div class="details">
+            <label for="fitters">Fitter Name:</label>
+            <input list="Fitters" id="fname" name="fitters" placeholder="type your name" required >
+            <datalist id="Fitters">
+                <option value="Subramani">
+                <option value="Udhaya">
+                <option value="Thanivel">
+                <option value="Ranjith">
+                <option value="Mahesh">
+                <option value="Ravi">   
+            </datalist>
+        </div>
+        <div class="details">
+            <label for="carts">Cart type:</label>
+            <input list="carts" id="fcart" name="carts" placeholder="Select cart here" required >
+            <datalist id="carts">
+                <option value="NS CART">
+                <option value="TOTE CART">
+                <option value="PICK CART">
+                <option value="REBIN CART">
+                <option value="U BOAT">
+                <option value="CAGE CART">   
+            </datalist>
+        </div>
+
+        <div class="details">
+            <label for="number">Cart Number:</label>
+            <input type="number" id="cno" name="Cart number" placeholder="Enter cart number" min=0  max= 500 required >
+        </div>
+
+
+         <div class="details">
+            <label for="issues">Cart issues</label>
+            <select name="Country" multiple size="10">
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="India">India</option>
+                <option value="Britain">Britain</option>
+            </select>
+        </div>
+
+
+
+
+
+
+
+
+       <br>
+        <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </form>
+ 
+    <script SRC = "js/demojs.js"></script>
+</body>
+</html>
