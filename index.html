@@ -6,18 +6,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAA4 RME Spare utilitzation</title>
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <title>Cart PM</title>
 </head>
 <body>
-    <form>
-        <h1>Cart Maintenance Daily Update Records</h1>
+    <form
+    id="form";
+    method="POST"
+    action="https://script.google.com/macros/s/AKfycbzHNL97C2iYDRZBaz6BFWxJlD5traRXu5vbUMJCb--95qjqk-pS-sqVPME69E8LssgFLQ/exec";
+    action="submitscript.php" target="dummyframe";                      
+    onsubmit="this.submit(); this.reset(); return false;"
+    >
+
+        <h3>Cart Maintenance Daily Update Records</h3>
         <div class="details">
             <label for="dates">Date:</label>
-            <input type="date" id="fdate" name="date" placeholder="Select date" min="01-11-2021"  max= "01-01-2024" required>
+            <input type="date" id="fdate" name="Date" placeholder="Select date" min="01-11-2021"  max= "01-01-2024" required>
         </div>
         <div class="details">
             <label for="shift">Shift:</label>
-            <input list="Shift" id="fshift" name="shift" placeholder="Select Shift" required />
+            <input list="Shift" id="fshift" name="Shift" placeholder="Select Shift" required />
             <datalist id="Shift">
                 <option value="A">
                 <option value="G">
@@ -25,9 +33,17 @@
                 <option value="C"> 
             </datalist>
         </div>
+     <!--   <div class="details4">
+            <label for="shift">Shift:</label>
+            <input type="checkbox" name="Shift" value="A">A<br>      
+            <input type="checkbox" name="Shift" value="G">G<br>      
+            <input type="checkbox" name="Shift" value="B">B<br>      
+            <input type="checkbox" name="Shift" value="C">C<br>      
+        <br>      
+     -->
         <div class="details">
             <label for="fitters">Fitter Name:</label>
-            <input list="Fitters" id="fname" name="fitters" placeholder="type your name" required >
+            <input list="Fitters" id="fname" name="Fitter" placeholder="type your name" required >
             <datalist id="Fitters">
                 <option value="Subramani">
                 <option value="Udhaya">
@@ -39,7 +55,7 @@
         </div>
         <div class="details">
             <label for="carts">Cart type:</label>
-            <input list="carts" id="fcart" name="carts" placeholder="Select cart here" required >
+            <input list="carts" id="fcart" name="Carts" placeholder="Select cart here" required >
             <datalist id="carts">
                 <option value="NS CART">
                 <option value="TOTE CART">
@@ -47,59 +63,50 @@
                 <option value="REBIN CART">
                 <option value="U BOAT">
                 <option value="CAGE CART">   
+                <option value="HPT CART">   
+                <option value="ICQA CART">   
+                <option value="PA CART">   
+                <option value="L CART">   
             </datalist>
         </div>
-
         <div class="details">
             <label for="number">Cart Number:</label>
-            <input type="number" id="cno" name="Cart number" placeholder="Enter cart number" min=0  max= 500 required >
+            <input type="number" id="cno" name="Cart No" placeholder="Enter cart number" min=0  max= 500 required >
         </div>
-
-
          <div class="details">
-            <label for="issues">Cart issues</label>
-            <select name="Country" multiple size="10">
-                <option value="USA">USA</option>
-                <option value="Russia">Russia</option>
-                <option value="India">India</option>
-                <option value="Britain">Britain</option>
-            </select>
+            <fieldset>      
+                <legend>Issues rectified in above cart</legend>      
+                <input type="checkbox" name="Unwanted materials Removed" value="Yes">Unwanted materials Removed<br>
+                <input type="checkbox" name="Wheel & Bolt nut Tightness" value="Yes">Wheel & Bolt nut Tightness<br>
+                <input type="checkbox" name="New Bolt & Nut fixing" value="Yes">New Bolt & Nut fixing<br>
+                <input type="checkbox" name="Wheel Cleaning Done" value="Yes">Wheel Cleaning Done<br>
+                <input type="checkbox" name="Welding Work Done" value="Yes">Welding Work Done<br>
+                <input type="checkbox" name="Painting Work Done" value="Yes">Painting Work Done<br>
+                <input type="checkbox" name="Oil lubrication Done" value="Yes">Oil lubrication Done<br>
+                <input type="checkbox" name="Sharp Edge Removed" value="Yes">Sharp Edge Removed<br>
+                <input type="checkbox" name="Door Lock Checked" value="Yes">Door Lock Checked<br>
+                <input type="checkbox" name="Wheel Pipe Changed" value="Yes">Wheel Pipe Changed<br>
+                <input type="checkbox" name="Plate Screw Fixing Done" value="Yes">Plate Screw Fixing Done<br>
+                <input type="checkbox" name="Wheel Washer Fixing Done" value="Yes">Wheel Washer Fixing Done<br>
+                <input type="checkbox" name="Wheel Change Done" value="Yes">Wheel Change Done<br>
+                <input type="checkbox" name="Mesh Checking Done" value="Yes">Mesh Checking Done<br>
+                <input type="checkbox" name="Mesh Welding Done" value="Yes">Mesh Welding Done<br>
+            </fieldset>      
         </div>
-
-
-
-
-
-
+        <div class="details">
+            <fieldset>
+                <legend>Remarks</legend>
+                <input type="text" id="fremarks" name="Remarks" placeholder="Enter remarks and other work">
+            </fieldset>
+        </div>
 
 
        <br>
         <div class="button">
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        </div>  
     </form>
- 
     <script SRC = "js/demojs.js"></script>
 </body>
 </html>
