@@ -7,20 +7,20 @@ body{
 }
 
 div.details{
-    font-size: 10px;
+    font-size: 15px;
     font-family: sans-serif;
     font-style: italic;
     display: flex;
 }
 div.details1{
-    font-size: 20px;
+    font-size: 15px;
     font-family: sans-serif;
     font-style: italic;
     display: flex;
 }
 
 label{
-    width:180px;
+    width:100px;
     clear:left;
     text-align:left;
     padding-right:20px;
@@ -32,7 +32,7 @@ label{
 
 input{
   height: 20px;
-  flex: 1 0 200px;
+  flex: 1 0 300px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
