@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
+
+
+
+
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBD314EBT4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QBD314EBT4');
-    </script>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2821/2821904.png" type="image/png">
     <meta charset="UTF-8">
@@ -25,7 +22,7 @@
     id="form";
     method="POST"
     action="https://script.google.com/macros/s/AKfycbzHNL97C2iYDRZBaz6BFWxJlD5traRXu5vbUMJCb--95qjqk-pS-sqVPME69E8LssgFLQ/exec";
-    action="submitscript.php" target="dummyframe";                      
+    action="submitscript.php" target="dummyframe";                
     onsubmit="this.submit(); this.reset(); return false;"
     >
 
@@ -36,13 +33,12 @@
         </div>
         <div class="details">
             <label for="shift">Shift:</label>
-            <input list="Shift" id="fshift" name="Shift" placeholder="Select Shift" required>
-            <datalist id="Shift">
-                <option value="A">
-                <option value="G">
-                <option value="B">
-                <option value="C"> 
-            </datalist>
+            <select id="fshift" name="Shift" placeholder="Select Shift" required>
+                <option value="A">A</option>
+                <option value="G">G</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+             </select>
         </div>
      <!--   <div class="details4">
             <label for="shift">Shift:</label>
@@ -54,32 +50,31 @@
      -->
         <div class="details">
             <label for="fitters">Fitter Name:</label>
-            <input list="Fitters" id="fname" name="Fitter" placeholder="type your name" required >
-            <datalist id="Fitters">
-                <option value="Subramani">
-                <option value="Udhaya">
-                <option value="Thanivel">
-                <option value="Ranjith">
-                <option value="Mahesh - Fitter">
-                <option value="Mahesh - Helper">
-                <option value="Ravi">   
-            </datalist>
+            <select id="fname" name="Fitter" placeholder="type your name" required >
+                <option value="Subramani">Subramani</option>
+                <option value="Udhaya">Udhaya</option>
+                <option value="Thanivel">Thanivel</option>
+                <option value="Ranjith">Ranjith</option>
+                <option value="Mahesh(fitter)">Mahesh.L</option>
+                <option value="Ravi">Ravi</option>
+                <option value="Mahesh(helper)">Mahesh.K</option>
+            </select>
         </div>
         <div class="details">
             <label for="carts">Cart type:</label>
-            <input list="carts" id="fcart" name="Carts" placeholder="Select cart here" required >
-            <datalist id="carts">
-                <option value="NS CART">
-                <option value="TOTE CART">
-                <option value="PICK CART">
-                <option value="REBIN CART">
-                <option value="U BOAT">
-                <option value="CAGE CART">   
-                <option value="HPT CART">   
-                <option value="ICQA CART">   
-                <option value="PA CART">   
-                <option value="L CART">
-                <option value="Other Works">
+            <select list="carts" id="fcart" name="Carts">
+                <option value="NS CART">NS Cart</option>
+                <option value="TOTE CART">TOTE Cart</option>
+                <option value="PICK CART">PICK Cart</option>
+                <option value="REBIN CART">REBIN Cart</option>
+                <option value="U BOAT">U Boat</option>
+                <option value="CAGE CART">CAGE Cart</option>
+                <option value="HPT CART">HPT Cart</option>
+                <option value="ICQA CART">ICQA Cart</option>
+                <option value="PA CART">PA Cart</option>
+                <option value="L CART">L Cart</option>
+                <option value="Other Works">Other Works</option>
+                </select>
             </datalist>
         </div>
         <div class="details">
@@ -104,7 +99,7 @@
                 <input type="checkbox" name="Wheel Change Done" value="Yes">Wheel Change Done<br>
                 <input type="checkbox" name="Mesh Checking Done" value="Yes">Mesh Checking Done<br>
                 <input type="checkbox" name="Mesh Welding Done" value="Yes">Mesh Welding Done<br>
-                <input type="checkbox" name="Pick basket fixing" value="Yes">Pick basket fixing work<br>
+                <input type="checkbox" name="Mesh Welding Done" value="Yes">Mesh Welding Done<br>
             </fieldset>      
         </div>
         <div class="details">
