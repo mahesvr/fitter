@@ -32,7 +32,7 @@ label{
 
 }
 
-input{
+input,select{
   height: 20px;
   flex: 0.5 0 100px;
   margin-left: 10px;
